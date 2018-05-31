@@ -9,7 +9,7 @@ sys.path.append('/usr/local/lib/python2.7/site-packages')
 import cv2
 import os
 
-print "now we are in the fucking program"
+print "now we are in the program"
 cascadePath = "haarcascade_frontalface_default.xml" 
 faceCascade = cv2.CascadeClassifier(cascadePath);
 print "so far so good."
