@@ -12,7 +12,7 @@ def main():
          #Saved in the same relative location
         img.save("rotated_picture.jpg")
     except IOError:
-        print "fuck off"
+        print "something went wrong"
  
 if __name__ == "__main__":
     main()
