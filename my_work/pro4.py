@@ -11,10 +11,10 @@ def main():
         img = img.crop(area)
          
         #Saved in the same relative location
-        img.save("fuckoff.jpg") 
+        img.save("new_z.jpg") 
          
     except IOError:
-        print "what the fuck is this"
+        print "IOError"
  
 if __name__ == "__main__":
     main()
