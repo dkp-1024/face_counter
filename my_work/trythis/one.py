@@ -1,8 +1,3 @@
-'''
-Sources:
-http://opencv.willowgarage.com/documentation/python/cookbook.html
-http://www.lucaamore.com/?p=638
-'''
 
 #Python 2.7.2
 #Opencv 2.4.2
@@ -16,7 +11,6 @@ import os
 def DetectFace(image, faceCascade, returnImage=False):
     # This function takes a grey scale cv image and finds
     # the patterns defined in the haarcascade function
-    # modified from: http://www.lucaamore.com/?p=638
 
     #variables    
     min_size = (20,20)
@@ -48,7 +42,6 @@ def DetectFace(image, faceCascade, returnImage=False):
 
 def pil2cvGrey(pil_im):
     # Convert a PIL image to a greyscale cv image
-    # from: http://pythonpath.wordpress.com/2012/05/08/pil-to-opencv-image/
     pil_im = pil_im.convert('L')
     cv_im = cv.CreateImageHeader(pil_im.size, cv.IPL_DEPTH_8U, 1)
     cv.SetData(cv_im, pil_im.tostring(), pil_im.size[0]  )
