@@ -10,7 +10,7 @@ try:
 	    width, height = image.size
 	print "successfully read"
 except IOError:
-	print "fuck off"
+	print "something went wrong"
 # Use the above statement within try block, as it can 
 # raise an IOError if file cannot be found, 
 # or image cannot be opened.
