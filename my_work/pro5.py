@@ -12,7 +12,7 @@ def main():
         #Saved in the same relative location
         img.save("resized_picture.jpg") 
     except IOError:
-        print ("fuck you man")
+        print ("error")
  
 if __name__ == "__main__":
     main()
